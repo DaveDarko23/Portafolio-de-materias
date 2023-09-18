@@ -1,9 +1,6 @@
-import SistemasOperativos from "../SistemasOperativos";
-
 const Windows = () => {
   return (
     <>
-      <SistemasOperativos />
       <section>
         <h2>Tema de Windows</h2>
         <p>

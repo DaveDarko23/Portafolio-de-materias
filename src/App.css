@@ -84,16 +84,21 @@ hr {
   display: flex;
 }
 
+.container-general{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .navigator {
-  min-width: 20%;
-  position: sticky;
+  width: 20%;
   height: 85vh;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   font-family: 'Montserrat', sans-serif;
   transition: all 1s ease-in-out;
-  overflow-y: hidden;
+  overflow-y: hidden
 }
 
 .navigator:hover {
@@ -116,10 +121,41 @@ hr {
   cursor: pointer;
 }
 
+.btn-close-container{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-close{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  height: 50%;
+  background-color: #e9890b;
+  width: 20px;
+  border-radius: 0 50px 50px 0;
+  color: aliceblue;
+
+}
+
 .ContainerInfo {
   padding: 3em;
   overflow-y: scroll;
   height: 85vh;
+}
+
+
+.ochenta{
+  width: 80%;
+}
+
+.cien{
+  width: 100%;
 }
 
 .ContainerInfo h2 {
@@ -136,9 +172,9 @@ hr {
 }
 
 .img-example {
-  margin: 2em;
+  margin: 2em auto;
   height: 300px;
-  width: 450px;
+  width: 100%;
 }
 
 .img-example img {
@@ -154,7 +190,7 @@ hr {
 }
 
 .card-info-container-vertical {
-  width: 30%;
+  width: 40%;
   min-height: 500px;
   max-height: fit-content;
   overflow-y: scroll;
@@ -163,11 +199,11 @@ hr {
   transition: all 0.25s ease-in-out;
 }
 
-.card-info-container-vertical:hover>.card-info h1 {
+.card-info-container-vertical:hover>.card-info h2 {
   color: #d7991d;
 }
 
-.card-info-container-horizontal:hover>.card-info h1 {
+.card-info-container-horizontal:hover>.card-info h2 {
   color: #d7991d;
 }
 
@@ -181,13 +217,14 @@ hr {
   width: 100%;
 }
 
-.card-info h1 {
+.card-info h2 {
   transition: color 0.3s ease-in-out;
   font-size: 1.4rem;
   margin-bottom: 0.8em;
 }
 
 .card-info p {
+  width: 100%;
   font-size: 1.2rem;
 }
 
@@ -205,6 +242,19 @@ hr {
 .card-info-container-horizontal:hover {
   transform: translateY(-8px);
 }
+
+.fifty-fifty-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fifty-fifty-card-p{
+  max-width: 50%;
+}
+
 
 /* Estilos ScrollBar */
 
@@ -286,7 +336,7 @@ hr {
   color: white;
 }
 
-.container-fifty-text h1 {
+.container-fifty-text h2 {
   font-size: 1.4rem;
   margin-bottom: 1em;
 }

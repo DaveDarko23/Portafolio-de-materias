@@ -1,5 +1,11 @@
+import Navigator from "../Components/Navigator";
+
 const RedesI = () => {
-  return <div>RedesI</div>;
+  return (
+    <>
+      <Navigator className="NavElement"></Navigator>
+    </>
+  );
 };
 
 export default RedesI;
