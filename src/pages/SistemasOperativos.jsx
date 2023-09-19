@@ -5,7 +5,7 @@ import Windows from "./SistemasOperativos/Windows";
 import { useState } from "react";
 
 const SistemasOperativos = ({ tema }) => {
-  const [navigator, setNavigator] = useState(true);
+  const [navigator, setNavigator] = useState(false);
 
   console.log(tema);
 
@@ -15,33 +15,34 @@ const SistemasOperativos = ({ tema }) => {
 
   return (
     <>
-      {navigator || (
-        <Navigator>
-          <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-          <NavLink to="/sistemas-operativos/windows">Windows</NavLink>
-        </Navigator>
-      )}
-      <section className="btn-close-container" onClick={closeNavigator}>
-        {navigator ? (
-          <section className="btn-close">
-            <p>A</p>
-            <p>B</p>
-            <p>R</p>
-            <p>I</p>
-            <p>R</p>
-          </section>
-        ) : (
-          <section className="btn-close">
-            <p>C</p>
-            <p>E</p>
-            <p>R</p>
-            <p>R</p>
-            <p>A</p>
-            <p>R</p>
-          </section>
+      <Navigator controller={navigator}>
+        {navigator && (
+          <>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/windows">Windows</NavLink>
+          </>
         )}
-      </section>
-      <section className={"ContainerInfo " + (navigator ? "cien" : "ochenta")}>
+      </Navigator>
+
+      <section className={"ContainerInfo " + (navigator ? "ochenta" : "cien")}>
+        <section className="container-close" onClick={closeNavigator}>
+          <section className="btn-close">
+            <p> {navigator ? "<" : ">"} </p>
+          </section>
+        </section>
         {tema === "kernel" && <Kernal />}
         {tema === "windows" && <Windows />}
       </section>
