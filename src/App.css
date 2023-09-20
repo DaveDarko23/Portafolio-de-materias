@@ -137,10 +137,16 @@ hr {
   align-items: center;
   height: 50%;
   background-color: #e9890b;
-  width: 20px;
+  width: 22px;
   border-radius: 0 50px 50px 0;
   color: aliceblue;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5em;
+}
 
+.btn-close:hover {
+  background-color: #e1a352;
+  width: 25px;
 }
 
 .ContainerInfo {
@@ -252,7 +258,7 @@ hr {
 }
 
 .fifty-fifty-card-p{
-  max-width: 50%;
+  max-width: 100%;
 }
 
 
@@ -343,4 +349,10 @@ hr {
 
 .container-fifty-text p {
   font-size: 1.2rem;
+}
+
+.flex-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }

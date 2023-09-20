@@ -24,6 +24,7 @@ const Kernal = () => {
         <img src="src\assets\Network00.jpg" alt="Example" />
       </div>
       <FiftyFiftyCard
+      title-text="Que es un sistema operativo"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
           molestias asperiores error, quibusdam quasi rerum nobis, voluptatem
           consequatur sunt adipisci ad eveniet illo architecto quidem
@@ -70,7 +71,13 @@ const Kernal = () => {
       <FiftyFiftyImg
         url="src\assets\software00.jpg"
         title="Importancia del SO"
-        text="Sin los sistemas operativos no tendríamos cómo hacer que las computadoras nos entendieran"
+        text="Los sistemas operativos son una parte fundamental de cualquier dispositivo informático, ya sea una computadora personal, un servidor, un teléfono móvil o incluso un electrodoméstico inteligente. Su importancia radica en una serie de funciones clave que desempeñan en la administración y el funcionamiento de hardware y software. A continuación, se detallan algunas de las razones por las cuales los sistemas operativos son tan importantes"
+      />
+
+<FiftyFiftyImg
+        url="src\assets\colors.jpg"
+        title="Importancia del SO"
+        text="Los sistemas operativos son una parte fundamental de cualquier dispositivo informático, ya sea una computadora personal, un servidor, un teléfono móvil o incluso un electrodoméstico inteligente. Su importancia radica en una serie de funciones clave que desempeñan en la administración y el funcionamiento de hardware y software. A continuación, se detallan algunas de las razones por las cuales los sistemas operativos son tan importantes"
       />
     </>
   );
