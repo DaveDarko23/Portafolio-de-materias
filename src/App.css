@@ -91,14 +91,23 @@ hr {
 }
 
 .navigator {
-  width: 20%;
+  width: 18%;
   height: 85vh;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   font-family: 'Montserrat', sans-serif;
-  transition: all 1s ease-in-out;
-  overflow-y: hidden
+  transition: width 0.5s ease-in-out;
+  overflow-y: hidden;
+}
+
+.navigator .active{
+  border-left: 0.3em solid rgb(240, 156, 29);
+}
+
+.navigator-close{
+  width: 0;
+  transition: width 0.5s ease-in-out;
 }
 
 .navigator:hover {
@@ -113,7 +122,7 @@ hr {
   background: linear-gradient(to right, rgb(233, 233, 241) 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .40s ease-out;
+  transition: all .40s ease-in-out;
 }
 
 .navigator a:hover {
@@ -153,11 +162,18 @@ hr {
   padding: 3em;
   overflow-y: scroll;
   height: 85vh;
+  position: relative;
 }
 
+.container-close{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
 
 .ochenta{
-  width: 80%;
+  width: 82%;
+  transition: width 1s ease-in-out;
 }
 
 .cien{
@@ -290,11 +306,13 @@ hr {
 .navigator {
   scrollbar-width: thin;
   scrollbar-color: #9398a8 #ffffff;
+  
 }
 
 /* Chrome, Edge, and Safari */
 .navigator::-webkit-scrollbar {
   width: 10px;
+  display: none;
 }
 
 .navigator::-webkit-scrollbar-track {
