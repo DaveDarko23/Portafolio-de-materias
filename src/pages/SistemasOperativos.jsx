@@ -18,21 +18,11 @@ const SistemasOperativos = ({ tema }) => {
       <Navigator controller={navigator}>
         {navigator && (
           <>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
-            <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
+            <NavLink to="/sistemas-operativos/windows">Sistemas Operativos</NavLink>
             <NavLink to="/sistemas-operativos/kernel">Kernal</NavLink>
             <NavLink to="/sistemas-operativos/windows">Windows</NavLink>
+            <NavLink to="/sistemas-operativos/windows">Kali</NavLink>
+            <NavLink to="/sistemas-operativos/windows">Mac OS</NavLink>
           </>
         )}
       </Navigator>
