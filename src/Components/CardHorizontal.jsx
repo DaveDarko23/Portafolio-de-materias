@@ -1,4 +1,4 @@
-const CardHorizontal = ({ title, text }) => {
+const CardHorizontal = ({ title = "Resumen", text }) => {
   return (
     <div className="card-info-container-horizontal">
       <div className="card-info">

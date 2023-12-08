@@ -7,10 +7,9 @@ const Header = () => {
         <img className="HeaderIMG" src="src\assets\logo.png" alt="" />
       </div>
       <ul>
-        <NavLink to="/redes-I">Redes I</NavLink>
-        <NavLink to="/redes-II">Redes II</NavLink>
-        <NavLink to="/redes-III">Redes III</NavLink>
-        <NavLink to="/sistemas-operativos">Sistemas Operativos</NavLink>
+        <NavLink to="/primer-parcial">Primer Parcial</NavLink>
+        <NavLink to="/segundo-parcial">Segundo Parcial</NavLink>
+        <NavLink to="/tercer-parcial">Tercer Parcial</NavLink>
       </ul>
     </header>
   );
